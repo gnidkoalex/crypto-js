@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Crypto project</title>
+</head>
+
+<body>
+    
+  <div class="parallax  ">
+    <div class="knockout  ">
+      <br>
+      <a>Crypto project</a>
+      <br>
+      <a> by Alex.g.</a>
+      </div>
+  </div>
+    
+  <nav id="navbar"class="navbar navbar-expand-lg navbar-dark navbarcolor">
+  <img  class= "logoc"src="./pics/logo2.jpg" onclick="changeContent('mainDiv')">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <!-- <a class="nav-link" onclick="changeContent('mainDiv')">Home</a> -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="changeContent('livecharts')" >Live charts</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" onclick="changeContent('about')" >About</a>
+      </li>
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input id="coinToSearch"class="form-control mr-sm-2" type="search" oninput="searchCoin2()" placeholder="Search" aria-label="Search">
+      <button  onclick="searchCoin()" class="btn btn-outline-success my-2 my-sm-0" type="button">Go</button>
+    </form>
+  </div>
+</nav>
+   
+<div class="container">
+  <div  id="mainDiv" class="row ">
+  </div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">my favorite crypto coins</h4>
+      </div>
+      <div class="modal-body" id="modalBody">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="container" >
+  <div  id="about" class="row " hidden>
+
+  
+    <div style="font-family:franklin;font-size: 19px">
+      <h1>About this project</h1>
+      <p>well it was a hard project but i made it.</p>
+      <p>  it took some time aspeacialy the css part but im glad to say im pround of the final result.</p>
+      <p> i want to thank every body how was there for me when this shity gragh part didnt warked and ive been so cranky about it.</p>
+      <p>i wnat to thank gal that made me the best Full Stack dev and didnt gave up on me when it was hard.</p>
+      <img src="./pics/me.jpg"  style="width:220px;height: 220px ; border-radius: 50% ">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="col-sm-12 col-md-12 col-lg-12">
+ 
+  <div class="container" id="chartContainer" hidden>
+  
+  </div>
+</div>
+<div>
+  <br>
+  <br>
+  <br>
+  <br> <br>
+  <br> <br>
+  <br> <br>
+  <br> <br>
+  <br><br>
+  <br>
+  <br>
+  <br> <br>
+  <br> <br><br>
+  <br>
+  <br>
+  <br> <br>
+  <br> <br>
+  <br> <br>
+  <br> <br>
+  <br>
+  <br> <br>
+  <br> <br>
+  <br>
+</div>
+
+
+
+    
+
+   
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+ crossorigin="anonymous"></script>
+<script src="index.js"></script>
+<script src="chartData.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script> -->
+
+<!-- <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script> -->
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+
+</body>
+
+</html>
